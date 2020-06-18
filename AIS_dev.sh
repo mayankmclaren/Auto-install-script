@@ -27,7 +27,7 @@ sudo apt-get install -y git
 
 sudo apt update
 sudo apt install -y snapd
-sudo snap install -y teams-for-linux
+sudo snap install teams-for-linux
 
 #wireshark
 
