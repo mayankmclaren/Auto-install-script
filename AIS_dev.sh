@@ -39,6 +39,12 @@ sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/v
 sudo apt -y update
 sudo apt install code
 
+#Persopolis Download Manager
+
+sudo add-apt-repository ppa:persepolis/ppa
+sudo apt update
+sudo apt install -y persepolis
+
 #wireshark
 
 sudo apt-get install -y libcap2-bin wireshark
