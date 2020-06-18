@@ -3,7 +3,7 @@ Just run this script in a newly installed Ubuntu OS and it will atomatically ins
 
 Clone the repository.
 
-Open the terminal and run the command.
+Open terminal and run the command.
 
 cd Auto_install_script-dev-
 
