@@ -8,6 +8,10 @@ sudo apt-get -y upgrade
 
 sudo apt-get install -y net-tools #net_tools
 sudo apt-get install software-properties-common #fot add-apt-repository
+sudo apt-get install -y openssh-server #openssh-server
+sudo apt-get install -y openssl #openssl
+sudo apt-get install -y libssl-dev #libssl-dev
+sudo apt-get install -y curl #curl
 
 #python
 
@@ -23,12 +27,6 @@ sudo apt install -y google-chrome-stable
 #git
 
 sudo apt-get install -y git
-
-#Microsoft_Teams
-
-sudo apt -y update
-sudo apt install -y snapd
-sudo snap install teams-for-linux
 
 #Visual Studio Code
 
@@ -58,3 +56,9 @@ export usrname=$USER
 sudo chgrp $usrname /usr/bin/dumpcap
 sudo chmod 750 /usr/bin/dumpcap
 sudo setcap cap_net_raw,cap_net_admin+eip /usr/bin/dumpcap
+
+#Microsoft_Teams
+
+sudo apt -y update
+sudo apt install -y snapd
+sudo snap install teams-for-linux
