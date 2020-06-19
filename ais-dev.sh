@@ -7,11 +7,12 @@ sudo apt-get -y upgrade
 #tools
 
 sudo apt-get install -y net-tools #net_tools
-sudo apt-get install software-properties-common #fot add-apt-repository
+sudo apt-get install software-properties-common #for add-apt-repository
 sudo apt-get install -y openssh-server #openssh-server
 sudo apt-get install -y openssl #openssl
 sudo apt-get install -y libssl-dev #libssl-dev
 sudo apt-get install -y curl #curl
+sudo apt-get install -y cmake #cmake
 
 #python
 
@@ -22,20 +23,12 @@ sudo apt install -y python3-pip #pip3
 
 #chrome
 
-sudo apt install -y google-chrome-stable
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt install -y ./google-chrome-stable_current_amd64.deb
 
 #git
 
 sudo apt-get install -y git
-
-#Visual Studio Code
-
-sudo apt -y update
-sudo apt install -y software-properties-common apt-transport-https wget
-wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
-sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
-sudo apt -y update
-sudo apt install code
 
 #Persopolis Download Manager
 
@@ -46,6 +39,10 @@ sudo apt install -y persepolis
 #lightdm
 
 sudo apt-get install -y lightdm
+
+#VS Code
+
+sudo snap install code --classic
 
 #wireshark
 
